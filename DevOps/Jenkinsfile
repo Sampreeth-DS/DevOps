@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     def message = params.DATA
-                    writeFile file: 'vars/main.yml', text: "message: '${message}'"
+                    writeFile file: 'roles/nginx/vars/main.yml', text: "message: '${message}'"
                 }
             }
         }
